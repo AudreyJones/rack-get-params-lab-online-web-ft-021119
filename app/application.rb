@@ -29,7 +29,7 @@ class Application
       if @@items.include?(added_item)
         if @@cart.include?(added_item)
           resp.write "#{added_item} is already in your cart!"
-        else 
+        else
           @@cart << added_item
           resp.write "added #{added_item}"
         end
